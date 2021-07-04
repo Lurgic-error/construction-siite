@@ -1,0 +1,21 @@
+.section {
+    margin: 0 1em;
+    padding: 2em 0em;
+
+    >*+* {
+        margin-top: 1rem;
+    }
+
+    @include respond(tab-land) {
+        margin: 0 2em;
+        padding: 4em 0;
+    }
+
+    @include respond(desktop) {
+        margin: 0 12em;
+    }
+}
+
+.section__title {
+    text-transform: uppercase;
+}
